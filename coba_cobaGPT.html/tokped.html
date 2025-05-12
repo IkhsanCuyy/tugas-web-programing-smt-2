@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Online</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f6f6f6;
+        }
+
+        header {
+            background-color: #ffffff;
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #ddd;
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: green;
+        }
+
+        nav input {
+            padding: 0.5rem;
+            width: 250px;
+        }
+
+        nav button {
+            padding: 0.5rem 1rem;
+            margin-left: 0.5rem;
+            border: none;
+            background-color: green;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        nav button.login {
+            background-color: #f0ad4e;
+        }
+
+        nav button.register {
+            background-color: #5cb85c;
+        }
+
+        main {
+            display: flex;
+            padding: 2rem;
+        }
+
+        .sidebar {
+            width: 20%;
+            background-color: #fff;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .sidebar h3 {
+            margin-bottom: 1rem;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar ul li {
+            padding: 0.5rem 0;
+            cursor: pointer;
+        }
+
+        .sidebar ul li:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            flex: 1;
+            margin-left: 2rem;
+        }
+
+        .shop-info {
+            margin-bottom: 1.5rem;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 1rem;
+        }
+
+        .product-card {
+            background-color: #fff;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background-color: #fff;
+            padding: 1rem 2rem;
+            text-align: center;
+            margin-top: 2rem;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">tokopedia</div>
+    <nav>
+        <input type="text" placeholder="Cari barang di sini">
+        <button>🔍</button>
+        <button class="login">Masuk</button>
+        <button class="register">Daftar</button>
+    </nav>
+</header>
+
+<main>
+    <aside class="sidebar">
+        <h3>Etalase Toko</h3>
+        <ul>
+            <li>Semua Produk</li>
+            <li>Produk Terjual</li>
+            <li>Guncang 5.5</li>
+            <li>Preorder</li>
+            <li>Hemaviton C1000</li>
+        </ul>
+    </aside>
+
+    <section class="content">
+        <div class="shop-info">
+            <h2>TempoStore_NEW</h2>
+            <p>Rating: ⭐ 4.9 | ±2 jam diproses</p>
+        </div>
+
+        <div class="products">
+            <div class="product-card">
+                <img src="https://via.placeholder.com/150" alt="Produk 1">
+                <h4>Vidoran Anak 2-6 Tahun</h4>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/150" alt="Produk 2">
+                <h4>Vidoran Anak 3-5 Tahun</h4>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/150" alt="Produk 3">
+                <h4>Vidoran Anak 1-3 Tahun</h4>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/150" alt="Produk 4">
+                <h4>Vidoran Sirup 2-6 Tahun</h4>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>© 2025 Toko Online</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segitiga</title>
+</head>
+<body>
+    <?php
+    $sisi_miring=8;
+    $alas=8;
+    $tinggi=8;
+    $luas=0.5*$alas*$tinggi;
+    $keliling=$alas+$tinggi+$sisi_miring;
+    
+    ?>
+
+    <h1>Segitiga</h1>
+    <a href="index.php">Home</a>
+
+    <h4>Luas = ½ x alas x tinggi = <?php echo $luas;?></h4>
+    <h4>keliling = jumlah semua sisi= <?php echo $keliling;?></h4>
+    <div style="margin-top: 20px;">
+    <img src="Segitiga.jpg" alt="Ilustrasi Segitiga" width="300">
+</body>
+</html>
